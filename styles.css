@@ -9,8 +9,8 @@ body {
 }
 
 html {
-    background: linear-gradient(rgba(8, 30, 50, 0.82), rgba(8, 30, 50, 0.82)),
-        url("images/library.png") center / cover no-repeat fixed;
+    background: linear-gradient(rgba(7, 25, 40, 0.68), rgba(7, 25, 40, 0.68)),
+        url("images/library-bg.jpg") center / cover no-repeat fixed;
 }
 
 body {
