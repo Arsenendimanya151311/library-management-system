@@ -7,21 +7,24 @@
 <body>
 
     <h1>Available Books</h1>
+    <p class="page-ribbon">Catalogue Center</p>
+    <p>Browse key titles currently in our library catalogue.</p>
 
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="books.html">Books</a> |
-        <a href="membership.html">Membership</a> |
-        <a href="contact.html">Contact Us</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a class="active" href="books.html">Books</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="membership.html">Membership</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
     </nav>
 
-    <hr>
+    <section class="content-card">
+        <h2>Book Collection</h2>
+        <p>Below are some books available in our library.</p>
 
-    <h2>Book Collection</h2>
-
-    <p>Below are some books available in our library.</p>
-
-    <table border="1" cellpadding="8">
+    <table>
         <tr>
             <th>Book Title</th>
             <th>Author</th>
@@ -33,41 +36,44 @@
             <td>Introduction to Computer Science</td>
             <td>John Smith</td>
             <td>Technology</td>
-            <td>Available</td>
+            <td><span class="status-available">Available</span></td>
         </tr>
 
         <tr>
             <td>Business Management Basics</td>
             <td>Mary Johnson</td>
             <td>Business</td>
-            <td>Available</td>
+            <td><span class="status-available">Available</span></td>
         </tr>
 
         <tr>
             <td>Principles of Economics</td>
             <td>David Brown</td>
             <td>Economics</td>
-            <td>Borrowed</td>
+            <td><span class="status-borrowed">Borrowed</span></td>
         </tr>
 
         <tr>
             <td>Academic Writing Skills</td>
             <td>Sarah White</td>
             <td>Education</td>
-            <td>Available</td>
+            <td><span class="status-available">Available</span></td>
         </tr>
     </table>
 
-    <h3>Book Categories</h3>
-    <ol>
-        <li>Technology</li>
-        <li>Business</li>
-        <li>Economics</li>
-        <li>Education</li>
-    </ol>
+    </section>
+
+    <section class="section-card">
+        <h3>Book Categories</h3>
+        <ol>
+            <li>Technology</li>
+            <li>Business</li>
+            <li>Economics</li>
+            <li>Education</li>
+        </ol>
+    </section>
 
     <footer>
-        <hr>
         <p>&copy; 2026 Smart Library Management System</p>
     </footer>
 

@@ -7,27 +7,33 @@
 <body>
 
     <h1>Contact Us</h1>
+    <p class="page-ribbon">Support & Enquiries</p>
+    <p>Reach out to the library team for support, inquiries, or suggestions.</p>
 
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="books.html">Books</a> |
-        <a href="membership.html">Membership</a> |
-        <a href="contact.html">Contact Us</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="membership.html">Membership</a>
+            <a class="active" href="contact.html">Contact Us</a>
+        </div>
     </nav>
 
-    <hr>
+    <section class="content-card">
+        <h2>Library Contact Information</h2>
 
-    <h2>Library Contact Information</h2>
+        <p>You can contact the library using the details below.</p>
 
-    <p>You can contact the library using the details below.</p>
+        <div class="contact-list">
+            <p><strong>Email:</strong> smartlibrary@example.com</p>
+            <p><strong>Phone:</strong> +254 746 631 411</p>
+            <p><strong>Location:</strong> Nairobi, Kenya</p>
+        </div>
 
-    <p><strong>Email:</strong> smartlibrary@example.com</p>
-    <p><strong>Phone:</strong> +254 746 631 411</p>
-    <p><strong>Location:</strong> Nairobi, Kenya</p>
+        <h3>Opening Hours</h3>
 
-    <h3>Opening Hours</h3>
-
-    <table border="1" cellpadding="8">
+    <table>
         <tr>
             <th>Day</th>
             <th>Opening Time</th>
@@ -53,23 +59,36 @@
         </tr>
     </table>
 
-    <h3>Send Us a Message</h3>
+    </section>
 
-    <form>
-        <label>Your Name:</label><br>
-        <input type="text" name="name"><br><br>
+    <section class="section-card">
+        <h3>Send Us a Message</h3>
 
-        <label>Your Email:</label><br>
-        <input type="email" name="email"><br><br>
+        <form>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input id="name" type="text" name="name" required>
+                </div>
 
-        <label>Your Message:</label><br>
-        <textarea name="message" rows="5" cols="40"></textarea><br><br>
+                <div class="form-group">
+                    <label for="contact-email">Your Email</label>
+                    <input id="contact-email" type="email" name="email" required>
+                </div>
 
-        <button type="submit">Send Message</button>
-    </form>
+                <div class="form-group full">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+    </section>
 
     <footer>
-        <hr>
         <p>&copy; 2026 Smart Library Management System</p>
     </footer>
 
