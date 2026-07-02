@@ -1,58 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Library Management System</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="site-container">
+            <h1>Smart Library Management System</h1>
+            <p class="page-ribbon">Campus Knowledge Hub</p>
+            <p class="intro-text">Your gateway to faster learning, easier borrowing, and better academic support.</p>
 
-    <h1>Smart Library Management System</h1>
-    <p class="page-ribbon">Campus Knowledge Hub</p>
-    <p>Your gateway to faster learning, easier borrowing, and better academic support.</p>
-
-    <nav>
-        <div class="nav-links">
-            <a class="active" href="index.html">Home</a>
-            <a href="books.html">Books</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="membership.html">Membership</a>
-            <a href="contact.html">Contact Us</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a class="active" href="index.html">Home</a>
+                <a href="books.html">Books</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="membership.html">Membership</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="intro-panel">
-        <img src="images/library.png" alt="Smart library reading space">
-        <div>
-            <h2>Welcome to Our Smart Library</h2>
-            <p>
-                The Smart Library Management System helps students find books quickly,
-                register as members, and access responsive support whenever needed.
-            </p>
-            <div class="stats-strip">
-                <div class="stat-pill"><strong>1200+</strong> Books</div>
-                <div class="stat-pill"><strong>350+</strong> Members</div>
-                <div class="stat-pill"><strong>6 Days</strong> Open Weekly</div>
+    <main class="site-container">
+        <section class="hero-card">
+            <div class="hero-content">
+                <h2>Welcome to Our Smart Library</h2>
+                <p>
+                    The Smart Library Management System helps students find books quickly,
+                    register as members, and access responsive support whenever needed.
+                </p>
+                <div class="button-row">
+                    <a class="btn-link" href="membership.html">Join Membership</a>
+                    <a class="btn-link secondary" href="books.html">Explore Books</a>
+                </div>
             </div>
-            <p>
-                <a class="btn-link" href="membership.html">Join Membership</a>
-                <a class="btn-link secondary" href="books.html">Explore Books</a>
-            </p>
-        </div>
-    </section>
+            <img src="images/library.png" alt="Smart library reading space">
+        </section>
 
-    <section class="feature-grid">
-        <article class="section-card">
-            <h3>Our Services</h3>
-            <ul>
-                <li><span class="icon-badge">BK</span>Access to academic books</li>
-                <li><span class="icon-badge">RG</span>Student membership registration</li>
-                <li><span class="icon-badge">SR</span>Book search and borrowing support</li>
-                <li><span class="icon-badge">AS</span>Library assistance and guidance</li>
-            </ul>
-        </article>
-
-        <article class="section-card">
-            <h3>Why Use This Library?</h3>
+        <section class="content-card">
+            <h2>About Our Library</h2>
             <p>
                 We provide a calm, well-structured learning environment that gives students
                 quick access to trusted materials for coursework and research.
@@ -61,12 +49,86 @@
                 Use the navigation bar to explore books, view our gallery, register for membership,
                 and contact the library team.
             </p>
-        </article>
-    </section>
+        </section>
 
-    <footer>
-        <p>&copy; 2026 Smart Library Management System</p>
+        <section>
+            <h2>Our Services</h2>
+            <div class="feature-grid three-col">
+                <article class="section-card info-card">
+                    <span class="icon-badge" aria-hidden="true">BK</span>
+                    <h3>Large Book Collection</h3>
+                    <p>Access a growing collection of technology, business, economics, and education resources.</p>
+                </article>
+
+                <article class="section-card info-card">
+                    <span class="icon-badge" aria-hidden="true">SP</span>
+                    <h3>Study Spaces</h3>
+                    <p>Use quiet corners and group discussion areas designed for productive student study sessions.</p>
+                </article>
+
+                <article class="section-card info-card">
+                    <span class="icon-badge" aria-hidden="true">FS</span>
+                    <h3>Friendly Staff</h3>
+                    <p>Get support from librarians who can help you locate books and complete borrowing tasks.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2>Quick Facts</h2>
+            <div class="stats-strip">
+                <article class="stat-pill">
+                    <h3>1200+</h3>
+                    <p>Books Available</p>
+                </article>
+                <article class="stat-pill">
+                    <h3>350+</h3>
+                    <p>Active Members</p>
+                </article>
+                <article class="stat-pill">
+                    <h3>6 Days</h3>
+                    <p>Open Weekly</p>
+                </article>
+                <article class="stat-pill">
+                    <h3>8 AM</h3>
+                    <p>Weekday Opening Time</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-container footer-grid">
+            <section>
+                <h3>Smart Library</h3>
+                <p>&copy; 2026 Smart Library Management System</p>
+            </section>
+
+            <section>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Opening Hours</h3>
+                <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
+            </section>
+
+            <section>
+                <h3>Contact</h3>
+                <p>Email: smartlibrary@example.com</p>
+                <p>Phone: +254 746 631 411</p>
+                <p>Nairobi, Kenya</p>
+            </section>
+        </div>
     </footer>
-
 </body>
 </html>

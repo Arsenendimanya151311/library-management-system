@@ -1,96 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="site-container">
+            <h1>Contact Us</h1>
+            <p class="page-ribbon">Support & Enquiries</p>
+            <p class="intro-text">Reach out to the library team for support, inquiries, or suggestions.</p>
 
-    <h1>Contact Us</h1>
-    <p class="page-ribbon">Support & Enquiries</p>
-    <p>Reach out to the library team for support, inquiries, or suggestions.</p>
-
-    <nav>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="books.html">Books</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="membership.html">Membership</a>
-            <a class="active" href="contact.html">Contact Us</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="books.html">Books</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="membership.html">Membership</a>
+                <a class="active" href="contact.html">Contact Us</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="content-card">
-        <h2>Library Contact Information</h2>
+    <main class="site-container">
+        <section>
+            <h2>Library Contact Information</h2>
+            <p>You can contact the library using the details below.</p>
 
-        <p>You can contact the library using the details below.</p>
+            <div class="feature-grid three-col">
+                <article class="section-card info-card">
+                    <span class="icon-badge" aria-hidden="true">AD</span>
+                    <h3>Address</h3>
+                    <p>Nairobi, Kenya</p>
+                </article>
 
-        <div class="contact-list">
-            <p><strong>Email:</strong> smartlibrary@example.com</p>
-            <p><strong>Phone:</strong> +254 746 631 411</p>
-            <p><strong>Location:</strong> Nairobi, Kenya</p>
+                <article class="section-card info-card">
+                    <span class="icon-badge" aria-hidden="true">PH</span>
+                    <h3>Phone</h3>
+                    <p>+254 746 631 411</p>
+                </article>
+
+                <article class="section-card info-card">
+                    <span class="icon-badge" aria-hidden="true">EM</span>
+                    <h3>Email</h3>
+                    <p>smartlibrary@example.com</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2>Opening Hours</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Opening Time</th>
+                            <th>Closing Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>8:00 AM</td>
+                            <td>6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>9:00 AM</td>
+                            <td>2:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Your Email</label>
+                        <input id="contact-email" type="email" name="email" required>
+                    </div>
+
+                    <div class="form-group full">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-container footer-grid">
+            <section>
+                <h3>Smart Library</h3>
+                <p>&copy; 2026 Smart Library Management System</p>
+            </section>
+
+            <section>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Opening Hours</h3>
+                <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
+            </section>
+
+            <section>
+                <h3>Contact</h3>
+                <p>Email: smartlibrary@example.com</p>
+                <p>Phone: +254 746 631 411</p>
+                <p>Nairobi, Kenya</p>
+            </section>
         </div>
-
-        <h3>Opening Hours</h3>
-
-    <table>
-        <tr>
-            <th>Day</th>
-            <th>Opening Time</th>
-            <th>Closing Time</th>
-        </tr>
-
-        <tr>
-            <td>Monday - Friday</td>
-            <td>8:00 AM</td>
-            <td>6:00 PM</td>
-        </tr>
-
-        <tr>
-            <td>Saturday</td>
-            <td>9:00 AM</td>
-            <td>2:00 PM</td>
-        </tr>
-
-        <tr>
-            <td>Sunday</td>
-            <td>Closed</td>
-            <td>Closed</td>
-        </tr>
-    </table>
-
-    </section>
-
-    <section class="section-card">
-        <h3>Send Us a Message</h3>
-
-        <form>
-            <div class="form-grid">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input id="name" type="text" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="contact-email">Your Email</label>
-                    <input id="contact-email" type="email" name="email" required>
-                </div>
-
-                <div class="form-group full">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-            </div>
-
-            <div class="form-actions">
-                <button type="submit">Send Message</button>
-            </div>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Smart Library Management System</p>
     </footer>
-
 </body>
 </html>

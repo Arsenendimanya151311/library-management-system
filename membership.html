@@ -1,80 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Membership</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="site-container">
+            <h1>Library Membership Registration</h1>
+            <p class="page-ribbon">Membership Desk</p>
+            <p class="intro-text">Complete the form below to join our learning community.</p>
 
-    <h1>Library Membership Registration</h1>
-    <p class="page-ribbon">Membership Desk</p>
-    <p>Complete the form below to join our learning community.</p>
-
-    <nav>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="books.html">Books</a>
-            <a href="gallery.html">Gallery</a>
-            <a class="active" href="membership.html">Membership</a>
-            <a href="contact.html">Contact Us</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="books.html">Books</a>
+                <a href="gallery.html">Gallery</a>
+                <a class="active" href="membership.html">Membership</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="content-card">
-        <h2>Register as a Library Member</h2>
-        <p>Fill in the form below to become a member of the library.</p>
+    <main class="site-container">
+        <section class="content-card">
+            <h2>Register as a Library Member</h2>
+            <p>Fill in the form below to become a member of the library.</p>
 
-        <form>
-            <div class="form-grid">
-                <div class="form-group">
-                    <label for="fullname">Full Name</label>
-                    <input id="fullname" type="text" name="fullname" required>
-                </div>
+            <form action="#" method="post">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input id="fullname" type="text" name="fullname" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="studentid">Student ID</label>
-                    <input id="studentid" type="text" name="studentid" required>
-                </div>
+                    <div class="form-group">
+                        <label for="studentid">Student ID</label>
+                        <input id="studentid" type="text" name="studentid" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input id="email" type="email" name="email" required>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" name="email" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" type="tel" name="phone">
-                </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input id="phone" type="tel" name="phone">
+                    </div>
 
-                <div class="form-group full">
-                    <label for="course">Course/Department</label>
-                    <input id="course" type="text" name="course">
-                </div>
+                    <div class="form-group full">
+                        <label for="course">Course/Department</label>
+                        <input id="course" type="text" name="course">
+                    </div>
 
-                <div class="form-group full">
-                    <label>Membership Type</label>
-                    <div class="radio-row">
-                        <label><input type="radio" name="membership" value="student" checked> Student</label>
-                        <label><input type="radio" name="membership" value="staff"> Staff</label>
+                    <fieldset class="form-group full radio-group">
+                        <legend>Membership Type</legend>
+                        <div class="radio-row">
+                            <label><input type="radio" name="membership" value="student" checked> Student</label>
+                            <label><input type="radio" name="membership" value="staff"> Staff</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group full">
+                        <label for="reason">Reason for Joining</label>
+                        <textarea id="reason" name="reason"></textarea>
                     </div>
                 </div>
 
-                <div class="form-group full">
-                    <label for="reason">Reason for Joining</label>
-                    <textarea id="reason" name="reason"></textarea>
+                <div class="form-actions">
+                    <button type="submit">Submit Registration</button>
+                    <button class="secondary" type="reset">Clear Form</button>
                 </div>
-            </div>
+            </form>
+        </section>
+    </main>
 
-            <div class="form-actions">
-                <button type="submit">Submit Registration</button>
-                <button class="secondary" type="reset">Clear Form</button>
-            </div>
-        </form>
-    </section>
+    <footer class="site-footer">
+        <div class="site-container footer-grid">
+            <section>
+                <h3>Smart Library</h3>
+                <p>&copy; 2026 Smart Library Management System</p>
+            </section>
 
-    <footer>
-        <p>&copy; 2026 Smart Library Management System</p>
+            <section>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Opening Hours</h3>
+                <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
+            </section>
+
+            <section>
+                <h3>Contact</h3>
+                <p>Email: smartlibrary@example.com</p>
+                <p>Phone: +254 746 631 411</p>
+                <p>Nairobi, Kenya</p>
+            </section>
+        </div>
     </footer>
-
 </body>
 </html>

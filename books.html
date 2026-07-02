@@ -1,81 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Available Books</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="site-container">
+            <h1>Available Books</h1>
+            <p class="page-ribbon">Catalogue Center</p>
+            <p class="intro-text">Browse key titles currently in our library catalogue.</p>
 
-    <h1>Available Books</h1>
-    <p class="page-ribbon">Catalogue Center</p>
-    <p>Browse key titles currently in our library catalogue.</p>
-
-    <nav>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a class="active" href="books.html">Books</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="membership.html">Membership</a>
-            <a href="contact.html">Contact Us</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a class="active" href="books.html">Books</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="membership.html">Membership</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="content-card">
-        <h2>Book Collection</h2>
-        <p>Below are some books available in our library.</p>
+    <main class="site-container">
+        <section class="content-card">
+            <h2>Book Collection</h2>
+            <p>Below are some books available in our library.</p>
 
-    <table>
-        <tr>
-            <th>Book Title</th>
-            <th>Author</th>
-            <th>Category</th>
-            <th>Status</th>
-        </tr>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Author</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Introduction to Computer Science</td>
+                            <td>John Smith</td>
+                            <td>Technology</td>
+                            <td><span class="status-available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>Business Management Basics</td>
+                            <td>Mary Johnson</td>
+                            <td>Business</td>
+                            <td><span class="status-available">Available</span></td>
+                        </tr>
+                        <tr>
+                            <td>Principles of Economics</td>
+                            <td>David Brown</td>
+                            <td>Economics</td>
+                            <td><span class="status-borrowed">Borrowed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Academic Writing Skills</td>
+                            <td>Sarah White</td>
+                            <td>Education</td>
+                            <td><span class="status-available">Available</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-        <tr>
-            <td>Introduction to Computer Science</td>
-            <td>John Smith</td>
-            <td>Technology</td>
-            <td><span class="status-available">Available</span></td>
-        </tr>
+        <section>
+            <h2>Book Categories</h2>
+            <div class="feature-grid two-col">
+                <article class="section-card">
+                    <h3>Academic Areas</h3>
+                    <ul class="category-list">
+                        <li>Technology</li>
+                        <li>Business</li>
+                        <li>Economics</li>
+                        <li>Education</li>
+                    </ul>
+                </article>
 
-        <tr>
-            <td>Business Management Basics</td>
-            <td>Mary Johnson</td>
-            <td>Business</td>
-            <td><span class="status-available">Available</span></td>
-        </tr>
+                <article class="section-card">
+                    <h3>Reading Formats</h3>
+                    <ul class="category-list">
+                        <li>Reference Books</li>
+                        <li>Course Textbooks</li>
+                        <li>Research Guides</li>
+                        <li>Past Project Reports</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
 
-        <tr>
-            <td>Principles of Economics</td>
-            <td>David Brown</td>
-            <td>Economics</td>
-            <td><span class="status-borrowed">Borrowed</span></td>
-        </tr>
+    <footer class="site-footer">
+        <div class="site-container footer-grid">
+            <section>
+                <h3>Smart Library</h3>
+                <p>&copy; 2026 Smart Library Management System</p>
+            </section>
 
-        <tr>
-            <td>Academic Writing Skills</td>
-            <td>Sarah White</td>
-            <td>Education</td>
-            <td><span class="status-available">Available</span></td>
-        </tr>
-    </table>
+            <section>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </section>
 
-    </section>
+            <section>
+                <h3>Opening Hours</h3>
+                <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
+            </section>
 
-    <section class="section-card">
-        <h3>Book Categories</h3>
-        <ol>
-            <li>Technology</li>
-            <li>Business</li>
-            <li>Economics</li>
-            <li>Education</li>
-        </ol>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Smart Library Management System</p>
+            <section>
+                <h3>Contact</h3>
+                <p>Email: smartlibrary@example.com</p>
+                <p>Phone: +254 746 631 411</p>
+                <p>Nairobi, Kenya</p>
+            </section>
+        </div>
     </footer>
-
 </body>
 </html>

@@ -1,74 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Gallery</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="site-container">
+            <h1>Library Gallery</h1>
+            <p class="page-ribbon">Visual Tour</p>
+            <p class="intro-text">Hover over each card to discover highlights from our smart library environment.</p>
 
-    <h1>Library Gallery</h1>
-    <p class="page-ribbon">Visual Tour</p>
-    <p>Hover over each card to discover highlights from our smart library environment.</p>
-
-    <nav>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="books.html">Books</a>
-            <a class="active" href="gallery.html">Gallery</a>
-            <a href="membership.html">Membership</a>
-            <a href="contact.html">Contact Us</a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="books.html">Books</a>
+                <a class="active" href="gallery.html">Gallery</a>
+                <a href="membership.html">Membership</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <section class="content-card">
-        <h2>Interactive Library Moments</h2>
-        <p>These flip cards present different aspects of our services and spaces.</p>
+    <main class="site-container">
+        <section class="content-card">
+            <h2>Interactive Library Moments</h2>
+            <p>These flip cards present different aspects of our services and spaces.</p>
 
-        <div class="gallery-grid">
-            <article class="flip-card" tabindex="0">
-                <div class="flip-card-inner">
-                    <figure class="flip-card-front">
-                        <img src="images/library.png" alt="Students studying in a smart library section">
-                        <figcaption>Collaborative Study Zone</figcaption>
-                    </figure>
-                    <div class="flip-card-back">
-                        <h3>Collaborative Zone</h3>
-                        <p>Comfortable seating and bright spaces designed for group assignments and peer learning.</p>
+            <div class="gallery-grid">
+                <article class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <figure class="flip-card-front">
+                            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80" alt="Students in a modern collaborative study area with laptops and books">
+                            <figcaption>Collaborative Study Zone</figcaption>
+                        </figure>
+                        <div class="flip-card-back">
+                            <h3>Collaborative Zone</h3>
+                            <p>Bright open tables and flexible seating help teams brainstorm, revise, and build projects together.</p>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="flip-card" tabindex="0">
-                <div class="flip-card-inner">
-                    <figure class="flip-card-front">
-                        <img src="images/library-bg.jpg" alt="Bookshelves and calm reading environment">
-                        <figcaption>Quiet Reading Corner</figcaption>
-                    </figure>
-                    <div class="flip-card-back">
-                        <h3>Quiet Corner</h3>
-                        <p>A focused atmosphere for deep reading, revision, and exam preparation.</p>
+                <article class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <figure class="flip-card-front">
+                            <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=1200&q=80" alt="A peaceful reading corner with bookshelves and natural light">
+                            <figcaption>Quiet Reading Corner</figcaption>
+                        </figure>
+                        <div class="flip-card-back">
+                            <h3>Quiet Corner</h3>
+                            <p>A calm, low-noise atmosphere designed for deep focus, revision sessions, and exam preparation.</p>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <article class="flip-card" tabindex="0">
-                <div class="flip-card-inner">
-                    <figure class="flip-card-front">
-                        <img src="images/library.png" alt="Digital learning support in the library">
-                        <figcaption>Digital Support Desk</figcaption>
-                    </figure>
-                    <div class="flip-card-back">
-                        <h3>Support Desk</h3>
-                        <p>Friendly assistance for book search, borrowing procedures, and student registration help.</p>
+                <article class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <figure class="flip-card-front">
+                            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80" alt="Library support desk where a librarian assists students">
+                            <figcaption>Digital Support Desk</figcaption>
+                        </figure>
+                        <div class="flip-card-back">
+                            <h3>Support Desk</h3>
+                            <p>Friendly staff assist with borrowing, account setup, catalogue searches, and digital learning tools.</p>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+
+                <article class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <figure class="flip-card-front">
+                            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80" alt="Neatly organized library shelves labeled by subject">
+                            <figcaption>Subject Sections</figcaption>
+                        </figure>
+                        <div class="flip-card-back">
+                            <h3>Subject Areas</h3>
+                            <p>Clearly labeled rows help learners quickly locate computing, business, and education collections.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <figure class="flip-card-front">
+                            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80" alt="Student using digital resources on a computer in the library">
+                            <figcaption>E-Learning Hub</figcaption>
+                        </figure>
+                        <div class="flip-card-back">
+                            <h3>Digital Learning Hub</h3>
+                            <p>Access e-books, online journals, and guided research tools from our connected computer stations.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <figure class="flip-card-front">
+                            <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80" alt="Aisle of bookshelves in a well-designed library interior">
+                            <figcaption>Knowledge Aisles</figcaption>
+                        </figure>
+                        <div class="flip-card-back">
+                            <h3>Knowledge Aisles</h3>
+                            <p>Curated collections across disciplines make discovery easy for both beginners and advanced readers.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <figure class="flip-card-front">
+                            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80" alt="Comfortable library seating area for students and readers">
+                            <figcaption>Comfort Lounge</figcaption>
+                        </figure>
+                        <div class="flip-card-back">
+                            <h3>Reading Lounge</h3>
+                            <p>Relaxed seating zones provide a welcoming place for casual reading and reflective learning breaks.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="flip-card" tabindex="0">
+                    <div class="flip-card-inner">
+                        <figure class="flip-card-front">
+                            <img src="https://images.unsplash.com/photo-1529148482759-b35b25c5f217?auto=format&fit=crop&w=1200&q=80" alt="Students discussing and studying together around books">
+                            <figcaption>Peer Learning Sessions</figcaption>
+                        </figure>
+                        <div class="flip-card-back">
+                            <h3>Peer Learning</h3>
+                            <p>Workshops and study circles build confidence through collaboration, mentorship, and shared ideas.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-container footer-grid">
+            <section>
+                <h3>Smart Library</h3>
+                <p>&copy; 2026 Smart Library Management System</p>
+            </section>
+
+            <section>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Opening Hours</h3>
+                <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                <p>Saturday: 9:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
+            </section>
+
+            <section>
+                <h3>Contact</h3>
+                <p>Email: smartlibrary@example.com</p>
+                <p>Phone: +254 746 631 411</p>
+                <p>Nairobi, Kenya</p>
+            </section>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Smart Library Management System</p>
     </footer>
-
 </body>
 </html>
